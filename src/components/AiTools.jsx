@@ -16,10 +16,10 @@ const AiTools = () => {
                 {AiToolsData.map((tools, index) => (
                     <div key={index} onClick={() => user && navigate(tools.path)}
                         className='p-8 m-4 max-w-xs rounded-lg bg-[#FDFDFE] shadow-lg border border-gray-100 hover:translate-y-1 transition-all duration-300 cursor-pointer'>
-                        <tools.Icon className='h-12 w-12 p-3 text-white rounded-lg' 
-                        style={{
-                            background:`linear-gradient(to bottom,${tools.bg.from},${tools.bg.to})`
-                        }}/>
+                        <tools.Icon className='h-12 w-12 p-3 text-white rounded-lg'
+                            style={{
+                                background: `linear-gradient(to bottom,${tools.bg.from},${tools.bg.to})`
+                            }} />
                         <h3 className='mt-6 mb-3 text-lg font-semibold'>{tools.title}</h3>
                         <p className='text-gray-400 text-sm max-w-[95%]'>{tools.description}</p>
                     </div>
